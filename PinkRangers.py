@@ -28,7 +28,7 @@ def load_diagnosis_model():
         @st.cache_resource
         def _load_model():
             try:
-                return load_model('cnn_model_preprocessed.h5')
+                return load_model('./cnn_model_preprocessed.h5')
             except Exception as e:
                 st.error(f"Error loading model: {e}")
                 return None
@@ -36,7 +36,7 @@ def load_diagnosis_model():
         @st.cache(allow_output_mutation=True, hash_funcs={tf.keras.models.Model: id})
         def _load_model():
             try:
-                return load_model('cnn_model_preprocessed.h5')
+                return load_model('./cnn_model_preprocessed.h5')
             except Exception as e:
                 st.error(f"Error loading model: {e}")
                 return None
@@ -418,3 +418,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
