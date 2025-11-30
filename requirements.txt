@@ -2,7 +2,12 @@ streamlit
 tensorflow
 numpy
 pandas
-scikit-learn
-opencv-python-headless
 Pillow
+opencv-python-headless
+scikit-learn
 matplotlib
+streamlit-folium
+folium
+scipy
+scikit-image
+requests
