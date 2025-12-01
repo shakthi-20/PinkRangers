@@ -413,9 +413,13 @@ def main():
     This tool provides preliminary information only and is not a substitute for professional medical advice.
     """)
     
-    if st.button("Donate to Breast Cancer Research"):
-        webbrowser.open_new_tab("https://www.nationalbreastcancer.org/breast-cancer-donations/")
+    st.link_button(
+    "Donate to Breast Cancer Research",
+    "https://www.nationalbreastcancer.org/breast-cancer-donations/"
+)
+
 
 if __name__ == "__main__":
     main()
+
 
